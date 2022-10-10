@@ -1,0 +1,22 @@
+{
+    "name": "steven-sang/doudian",
+    "description": "抖店开放平台相关应用",
+    
+    "authors": [
+        {
+            "name": "sangyu",
+            "email": "992340655@qq.com"
+        }
+    ],
+    "require": {
+        "php" : ">=7.0.0"
+    },
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "autoload": {
+        "psr-4": {
+            "Doudian\\": "src/Doudian"
+        }
+    }
+}
