@@ -4,7 +4,7 @@
 ## 安装
 
 ```bash
-composer require "overtrue/laravel-wechat"
+composer require "jszgjsj/laravel-doudian"
 ```
 
 ## 配置
