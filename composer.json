@@ -1,22 +1,51 @@
 {
-    "name": "steven-sang/doudian",
-    "description": "抖店开放平台相关应用",
-    
+    "name": "sang/laravel-doudian",
+    "description": "抖音小店开放平台SDK",
+    "keywords": [
+        "doudian",
+        "抖店开放平台"
+    ],
+    "license": "MIT",
+    "type": "library",
     "authors": [
         {
             "name": "sangyu",
-            "email": "992340655@qq.com"
+            "email": "992340655@qq.com",
+            "role": "Developer"
         }
     ],
     "require": {
-        "php" : ">=7.0.0"
+        "php": ">=7.2",
+        "illuminate/support": ">=6.0"
     },
-    "type": "project",
-    "license": "MIT",
-    "minimum-stability": "dev",
+    "require-dev": {
+        "orchestra/testbench": ">=4.0",
+        "phpunit/phpunit": "^8.0"
+    },
     "autoload": {
         "psr-4": {
-            "Doudian\\": "src/Doudian"
+            "Oneself\\DouDian\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Oneself\\DouDian\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Oneself\\DouDian\\DouDianServiceProvider"
+            ],
+            "aliases": {
+                "DouDian": "Oneself\\DouDian\\DouDianFacade"
+            }
         }
     }
 }
