@@ -3,7 +3,7 @@
 
 1、通过`composer`安装扩展包。
 ```bash
-composer require sang/laravel-doudian
+composer require jszgjsj/laravel-doudian
 ```
 2、发布配置文件。
 ```bash
