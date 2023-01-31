@@ -5,7 +5,10 @@
 ```bash
 composer require jszgjsj/laravel-doudian
 ```
+
 2、发布配置文件。
+```config/app.php
+    Oneself\DouDian\DouDianServiceProvider::class
 ```bash
 php artisan vendor:publish --provider="Oneself\DouDian\DouDianServiceProvider"
 ```
